@@ -6,13 +6,6 @@
     android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <TextView
-        android:textSize="20sp"
-        android:text="@string/delivery_to_sadiq"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </TextView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"

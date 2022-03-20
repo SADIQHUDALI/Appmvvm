@@ -16,13 +16,14 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.fragment_cart)
         supportActionBar!!.hide()
-        openHomeScreen()
+        //openHomeScreen()
+
     }
    fun openHomeScreen(){
-       CoroutineScope(Dispatchers.Main).launch {
-           delay(3000)
+      CoroutineScope(Dispatchers.Main).launch {
+    delay(3000)
            val s: Intent = Intent(this@SplashActivity,MainActivity::class.java)
            startActivity(s)
            finish()

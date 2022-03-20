@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/llEmt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="@dimen/dimen_150"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_150"
+            app:lottie_rawRes="@raw/empty_cart"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            >
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textAlignment="center"
+            android:text="@string/your_cart_is_empyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <Button
+            android:layout_marginRight="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:backgroundTint="@color/Red_200"
+            android:text="Add Products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
